@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/loginHeader"
+            android:text="Register"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputFirstName"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_width="0dp"
+                android:layout_weight="2">
+
+            <EditText
+                    android:id="@+id/editTextFirstName"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/first_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLastName"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_width="0dp"
+                android:layout_weight="3">
+
+            <EditText
+                    android:id="@+id/editTextLastName"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/last_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textGender"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:enabled="false"
+                android:layout_weight="1">
+
+            <EditText
+                    android:id="@+id/textGender2"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/gender"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:clickable="false"
+                    android:enabled="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+
+        <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_weight="10"
+                android:gravity="center_vertical">
+
+            <RadioButton
+                    android:text="@string/male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#9E9E9E"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_gravity="bottom" />
+
+            <RadioButton
+                    android:text="Female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="2"
+                    android:textColor="#9E9E9E"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_gravity="bottom" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputID"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+                android:id="@+id/editTextID"
+                style="@style/modifiedEditText"
+                android:hint="@string/id"
+                android:maxLines="1"
+                android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputSchool"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+                android:id="@+id/editTextSchool"
+                style="@style/modifiedEditText"
+                android:hint="@string/school"
+                android:inputType="text"
+                android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEmail"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+                android:id="@+id/editTextEmail"
+                style="@style/modifiedEditText"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            app:passwordToggleDrawable="@android:drawable/ic_menu_view">
+
+        <EditText
+                android:id="@+id/editTextPasword"
+                style="@style/modifiedEditText"
+                android:hint="@string/phone"
+                android:maxLines="1"
+                android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+            android:id="@+id/cirLoginButton"
+            style="@style/loginButton"
+            android:text="Submit"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/loginViewsMargin" />
+
+    <TextView
+            style="@style/parent"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/login_signup_hint"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="right"
+            android:id="@+id/signUp" />
+
+
+</LinearLayout>
